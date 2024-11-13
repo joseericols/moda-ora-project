@@ -1,0 +1,155 @@
+/* GLOBALS */
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Roboto;
+}
+
+/* FONTS */
+@font-face {
+    font-family: Vioda Libre;
+    src: url(/fonts/ViaodaLibre-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(/fonts/Roboto-Regular.ttf);
+}
+
+/* root */
+
+:root {
+    --header-height: 100vh;
+    --main-height: 100vh;
+    --footer-height: 100vh;
+}
+
+/* HEADER */
+
+.header-container {
+    height: var(--header-height);
+    background-image: url(/imagens/topo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #162028;
+    height: 4em;
+
+}
+
+.nav-title {
+     text-transform: capitalize;
+     font-size: 2.5em;
+     color: white;
+     font-family: Vioda Libre;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 5em;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    letter-spacing: 4px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #425564;
+}
+
+/* MAIN */
+.section-container{
+    display: flex;
+    flex-direction: column;
+    height: var(--main-height);
+    margin: 4em 20em;
+    color: #555;
+}
+
+.about-container {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    font-family: Vioda Libre;
+}
+
+.main-description {
+    font-size: 1.5em;
+    line-height: 2;
+    margin-bottom: 1em;
+}
+
+.product {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    padding: 0;
+}
+
+.product li {
+    text-align: center;
+}
+
+.product-name {
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.personality {
+    text-transform: capitalize;
+}
+
+/* FOOTER */
+
+.footer-container {
+    margin-top: 10em;
+    color: white;
+    background-color:  #003d52;
+    height: var(--footer-height);
+    text-align: left;
+    background-image: url(/imagens/bg_detalhe.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.footer-content {
+    margin-left: 5em;
+    margin-right: 5em;
+    width: 70vw;
+}
+
+.footer-title {
+    font-family: Vioda Libre;
+    font-size: 3.5em;
+    padding: 1.5em;
+}
+
+.footer-description {
+    line-height: 3ch;
+    font-size: 1.3em;
+}
+
+.copy {
+    text-align: center;
+    background-color: #162028;
+    padding: 2em;
+    margin: 0;
+    color: #6f8597;
+    font-size: 1em;
+    letter-spacing: .5em;
+}
